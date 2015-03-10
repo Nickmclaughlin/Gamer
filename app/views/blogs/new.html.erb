@@ -1,24 +1,20 @@
 <%= form_for @blog do |f| %>
 
-<p>
-  <%= f.label :city %><br>
-  <%= f.text_field :city %>
-</p>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
 
-<p>
-  <%= f.label :state %><br>
-  <%= f.text_field :state %>
-</p>
-<p>
-  <%= f.label :zipcode %><br>
-  <%= f.text_field :zipcode %>
-</p>
+  <p>
+    <%= f.label :genre %><br>
+    <%= f.text_field :genre %>
+  </p>
 
-<p>
-  <%= f.label :name %><br>
-  <%= f.text_field :name %>
-</p>
+  <p>
+    <%= f.label :body %><br>
+    <%= f.text_field :body %>
+  </p>
 
-  <%= f.submit 'Create Blog', class: "button" %>
+    <%= f.submit 'Create Blog' %>
 
 <% end %>

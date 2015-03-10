@@ -1,3 +1,9 @@
-hello
-
+<% if current_user = @user %>
  <%= link_to "Post New Blog", new_blog_path %>
+<% end %>
+
+<ol>
+  <% @blogs.each do |blog| %>
+    <li><%= link_to blog.title, blog_path(blog) %></li>
+  <% end %>
+</ol>
