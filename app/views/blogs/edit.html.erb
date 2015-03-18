@@ -1,0 +1,30 @@
+<div class="row information">
+
+  <% if current_user %>
+    <%= form_for [@blog] do |f| %>
+     <% if @blog.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@blog.errors.count, "error") %> prohibited
+            this review from being saved:</h2>
+          <ul>
+            <% @blog.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end%>
+       <p>
+        <%= f.label :title  %><br>
+        <%= f.text_field :title %>
+      </p>
+
+      <p>
+        <%= f.label :body  %><br>
+        <%= f.text_field :body %>
+      </p>
+
+      <%= f.submit "Update Blog", class: "button" %>
+    <% end %>
+  <% end %>
+
+</div>

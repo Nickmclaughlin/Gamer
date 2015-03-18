@@ -57,7 +57,7 @@
 
         <ul class="dropdown">
           <% if current_user %>
-            <li><%= link_to "Edit Profile", edit_user_path(@user) %></li>
+            <li><%= link_to "Edit Profile", edit_user_path(current_user.id) %></li>
             <li><%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "btn success" %></li>
           <% else %>
             <li><%= link_to "Sign Up", new_user_registration_path, class: "btn success" %></li>
@@ -114,7 +114,7 @@
 
         <ul class="dropdown">
           <% if current_user %>
-            <li><%= link_to "Edit Profile", edit_user_path(@user) %></li>
+            <li><%= link_to "Edit Profile", edit_user_path(current_user.id) %></li>
             <li><%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "btn success" %></li>
           <% else %>
             <li><%= link_to "Sign Up", new_user_registration_path, class: "btn success" %></li>
