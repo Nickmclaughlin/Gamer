@@ -4,3 +4,31 @@
 
 <br>
 By: <%= link_to @user.first_name, user_path(@user) %>
+
+<ul>
+  <% @blog.comments.each do |comment| %>
+      <div>
+        <li><%= comment.title %> - <%= comment.body %>
+      </div>    
+  <% end %>
+</ul>
+
+<div>
+  <% if current_user %>
+    <%= form_for [@blog, @comment] do |f| %>
+
+    <p>
+      <%= f.label :title %><br>
+      <%= f.text_field :title %>
+    </p>
+
+    <p>
+      <%= f.label :body %><br>
+      <%= f.text_field :body %>
+    </p>
+
+      <%= f.submit 'Post Comment' %>
+
+    <% end %>
+  <% end %>
+</div>

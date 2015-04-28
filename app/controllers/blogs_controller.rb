@@ -6,6 +6,7 @@ class BlogsController < ApplicationController
   def show
     @blog = Blog.find(params[:id])
     @user = User.find(@blog.user_id)
+    @comment = Comment.new
   end
 
   def create

@@ -1,11 +1,12 @@
-<% if current_user = @user %>
- <%= link_to "Post New Blog", new_blog_path %>
-<% end %>
-
+<%= @user.first_name %> <%= @user.last_name %>'s Blog List
 <ol>
   <% @blogs.each do |blog| %>
-    <li><%= link_to blog.title, blog_path(blog) %> <%= link_to 'Edit', edit_blog_path(blog)%>
+    <li><%= link_to blog.title, blog_path(blog) %> <%= link_to 'Edit', edit_blog_path(blog), class: "button tiny" %>
       <%= link_to 'Delete', blog_path(blog), method: :delete, data: {confirm: 'Are you sure you want to delete blog?'}, class: "button tiny delete" %>
     </li>
   <% end %>
 </ol>
+
+<% if current_user = @user %>
+ <%= link_to "Post New Blog", new_blog_path %>
+<% end %>

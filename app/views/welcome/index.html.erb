@@ -1,4 +1,8 @@
-<%= link_to "Post Blog", new_blog_path(@blog) %>
+<%= link_to "Post New Blog", new_blog_path(@blog) %>
 <% if current_user %>
-  <%= link_to "Edit Profile", edit_user_path(@user) %>
+  <ul>
+    <% @blogs.each do |blog| %>
+      <li><%= link_to blog.title, blog_path(blog) %></li>
+    <% end %>
+  </ul>
 <% end %>
