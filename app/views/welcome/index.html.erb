@@ -1,8 +1,15 @@
-<%= link_to "Post New Blog", new_blog_path(@blog) %>
-<% if current_user %>
+<div class="row">
+  <% if current_user %>
+    <%= link_to "Post New Blog", new_blog_path(@blog) %>
+  <% else %>
+    <%= link_to "Sign Up to Post Blog", new_user_registration_path, class: "btn success" %>
+  <% end %>
+</div>
+<div class="row">
+  Top Stories
   <ul>
     <% @blogs.each do |blog| %>
       <li><%= link_to blog.title, blog_path(blog) %></li>
     <% end %>
   </ul>
-<% end %>
+</div>
