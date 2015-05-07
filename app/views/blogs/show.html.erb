@@ -1,34 +1,31 @@
-<%= @blog.title %><br><br>
-
-<%= @blog.body %>
-
-<br>
-By: <%= link_to @user.first_name, user_path(@user) %>
-
-<ul>
-  <% @blog.comments.each do |comment| %>
-      <div>
-        <li><%= comment.title %> - <%= comment.body %>
-      </div>    
-  <% end %>
-</ul>
-
-<div>
-  <% if current_user %>
-    <%= form_for [@blog, @comment] do |f| %>
-
-    <p>
-      <%= f.label :title %><br>
-      <%= f.text_field :title %>
-    </p>
-
-    <p>
-      <%= f.label :body %><br>
-      <%= f.text_field :body %>
-    </p>
-
-      <%= f.submit 'Post Comment' %>
-
+<div class="row">
+  <%= @blog.title %>
+  <br>
+  <%= @blog.body %>
+  <br>
+  By: <%= link_to @user.first_name, user_path(@user) %>
+  <br>
+  Comment Section:
+  <ul>
+    <% @blog.comments.each do |comment| %>
+        <div>
+          <li><%= comment.body %></li>
+        </div>
     <% end %>
-  <% end %>
+  </ul>
+
+  <div class="row">
+    <% if current_user %>
+      <%= form_for [@blog, @comment] do |f| %>
+
+      <p>
+        <%= f.label :body %><br>
+        <%= f.text_field :body %>
+      </p>
+
+        <%= f.submit 'Post Comment' %>
+
+      <% end %>
+    <% end %>
+  </div>
 </div>
