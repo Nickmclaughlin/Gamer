@@ -2,7 +2,7 @@
 <ol>
   <% @blogs.each do |blog| %>
     <li><%= link_to blog.title, blog_path(blog) %> <%= link_to 'Edit', edit_blog_path(blog), class: "button tiny" %>
-      <%= link_to 'Delete', blog_path(blog), method: :delete, data: {confirm: 'Are you sure you want to delete blog?'}, class: "button tiny delete" %>
+      <%= link_to 'Delete', blog_path(blog), method: :delete, data: {confirm: 'Are you sure you want to delete blog?'}, class: "button tiny alert" %>
     </li>
   <% end %>
 </ol>
