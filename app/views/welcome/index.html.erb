@@ -6,13 +6,32 @@
   <% end %>
 </div>
 
-
-
 <div class="row">
-  Top Stories
   <ul>
     <% @blogs.each do |blog| %>
       <li><%= link_to blog.title, blog_path(blog) %></li>
     <% end %>
   </ul>
 </div>
+
+<div class="row">
+  Sports Blogs<br>
+  <ul>
+    <% @blogs.each do |blog| %>
+      <% if blog.genre == "Sports" %>
+        <li><%= link_to blog.title, blog_path(blog) %></li>
+      <% end %>
+    <% end %>
+  </ul>
+</div>
+
+  <div class="row">
+    Video Game Blogs<br>
+    <ul>
+      <% @blogs.each do |blog| %>
+        <% if blog.genre == "Video Games" %>
+          <li><%= link_to blog.title, blog_path(blog) %></li>
+        <% end %>
+      <% end %>
+    </ul>
+  <div>
