@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" class="blog_form">
   <%= form_for @blog do |f| %>
 
     <p>
@@ -6,9 +6,19 @@
       <%= f.text_field :title %>
     </p>
 
-    <p>
+    <p class="genre">
       <%= f.label :genre %><br>
       <%= f.select :genre, ["Select One", "Video Games", "Sports"] %>
+    </p>
+
+    <p class="sports">
+      <%= f.label :subgenre %><br>
+      <%= f.select :subgenre, ["Select One", "NBA", "MLB", "NFL", "NCAAF", "NCAAMBB", "Soccer"] %>
+    </p>
+
+    <p class="video games">
+      <%= f.label :subgenre %><br>
+      <%= f.select :subgenre, ["Select One", "Xbox One", "PS4", "PC"] %>
     </p>
 
     <p>
@@ -24,4 +34,13 @@
       <%= f.submit 'Create Blog' %>
 
   <% end %>
+
+  <script>
+    $(document).ready(function(){
+        if($(".genre").val() === "Video Games"){
+          $("sports").hide();
+          $("video games").show();
+        }
+    });
+  </script>
 </div>

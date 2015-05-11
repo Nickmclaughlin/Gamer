@@ -1,31 +1,22 @@
-<div class="row">
-  <% if current_user %>
-    <%= link_to "Post New Blog", new_blog_path(@blog) %>
-  <% else %>
-    <%= link_to "Sign Up to Post Blog", new_user_registration_path, class: "btn success" %>
-  <% end %>
-</div>
-
-<div class="row">
-  <ul>
-    <% @blogs.each do |blog| %>
-      <li><%= link_to blog.title, blog_path(blog) %></li>
-    <% end %>
-  </ul>
-</div>
-
-<div class="row">
-  Sports Blogs<br>
-  <ul>
-    <% @blogs.each do |blog| %>
-      <% if blog.genre == "Sports" %>
-        <li><%= link_to blog.title, blog_path(blog) %></li>
-      <% end %>
-    <% end %>
-  </ul>
-</div>
-
+<div class="welcome">
   <div class="row">
+    <% if current_user %>
+      <%= link_to "Post New Blog", new_blog_path(@blog) %>
+    <% else %>
+      <%= link_to "Sign Up to Post Blog", new_user_registration_path, class: "btn success" %>
+    <% end %>
+
+    <br>
+    Sports Blogs<br>
+    <ul>
+      <% @blogs.each do |blog| %>
+        <% if blog.genre == "Sports" %>
+          <li><%= link_to blog.title, blog_path(blog) %></li>
+        <% end %>
+      <% end %>
+    </ul>
+
+
     Video Game Blogs<br>
     <ul>
       <% @blogs.each do |blog| %>
@@ -34,4 +25,5 @@
         <% end %>
       <% end %>
     </ul>
-  <div>
+  </div>
+</div>
