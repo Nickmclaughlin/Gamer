@@ -11,15 +11,10 @@
       <%= f.select :genre, ["Select One", "Video Games", "Sports"] %>
     </p>
 
-    <p class="sports">
+    <p>
       <%= f.label :subgenre %><br>
-      <%= f.select :subgenre, ["Select One", "NBA", "MLB", "NFL", "NCAAF", "NCAAMBB", "Soccer"] %>
-    </p>
-
-    <p class="video games">
-      <%= f.label :subgenre %><br>
-      <%= f.select :subgenre, ["Select One", "Xbox One", "PS4", "PC"] %>
-    </p>
+      <%= f.select :subgenre, ["Select One", "NBA", "MLB", "NFL", "NCAAF", "NCAAMBB", "Soccer", "Xbox One", "PS4", "PC"] %>
+    </p>``
 
     <p>
       <%= f.label :body %><br>
@@ -35,12 +30,5 @@
 
   <% end %>
 
-  <script>
-    $(document).ready(function(){
-        if($(".genre").val() === "Video Games"){
-          $("sports").hide();
-          $("video games").show();
-        }
-    });
-  </script>
+
 </div>
