@@ -3,4 +3,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :blogs
   has_many :comments
+  has_many :likes
+  has_many :teams, through: :users
 end
