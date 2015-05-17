@@ -7,5 +7,8 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+  resources :teams do
+  end 
+
   resources :users, only: [:show, :index, :edit, :update]
 end

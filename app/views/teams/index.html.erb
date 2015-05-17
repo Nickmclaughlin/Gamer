@@ -1,0 +1,5 @@
+<div class="row">
+  <% @teams.each do |x| %>
+    <option value="<%= x["#"].to_i %>"><%= x["Team"]%></option>
+  <% end %>
+</div>
