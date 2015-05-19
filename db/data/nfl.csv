@@ -1,122 +1,122 @@
-Team,Stadium,Capacity,City,Population,Conference,#
-Dallas Cowboys,Cowboys Stadium,"80,000","Arlington, TX","1,197,816",NFC East,1
-New York Giants,New Meadowlands Stadium,"82,500","East Rutherford, NJ","8,175,133",NFC East,1
-Philadelphia Eagles,Lincoln Financial Field,"67,600","Philadelphia, PA","1,526,006",NFC East,1
-Washington Redskins,Fed Ex Field,"91,700","Landover, MD","601,723",NFC East,1
-Arizona Cardinals,University of Pheonix Stadium,"63,400","Glendale, AZ","226,721",NFC West,14
-San Francisco 49ers,Candlestick Park,"69,700","San Francisco, CA","805,235",NFC West,14
-Seattle Seahawks,Century Link Field,"67,000","Seattle, WA","608,660",NFC West,14
-St. Louis Rams,Edward Jones Dome,"66,000","St. Louis, MO","319,294",NFC West,14
-Chicago Bears,Soldier Field,"61,500","Chicago, IL","2,695,598",NFC North,25
-Detroit Lions,Ford Field,"64,500","Detroit, MI","713,777",NFC North,25
-Green Bay Packers,Lambeau Field,"73,000","Green Bay, WI","104,057",NFC North,25
-Minnesota Vikings,Metrodome,"64,000","Minneapolis, MN","382,578",NFC North,25
-Atlanta Falcons,Georgia Dome,"71,250","Atlanta, GA","420,003",NFC South,38
-Carolina Panthers,Bank of America Stadium,"73,800","Charolette, NC","731,424",NFC South,38
-New Orleans Saints,Superdome,"65,000","New Orleans, LA","343,829",NFC South,38
-Tampa Bay Buccaneers,Raymond Jones Stadium,65900,"Tampa, FL","335,709",NFC South,38
-Buffalo Bills,Ralph Wilson Stadium,"73,000","Orchard Park, NY","261,310",AFC East,50
-Miami Dolphins,Sun Life Stadium,"75,000","Miami, FL","399,457",AFC East,50
-New England Patriots,Gillette Stadium,"68,800","Foxborough, MA","16,865",AFC East,50
-New York Jets,New Meadowlands Stadium,"82,500","East Rutherford, NJ","8,175,133",AFC East,50
-Denver Broncos,Invesco Field at Mile High,"76,100","Denver, CO","600,158",AFC West,63
-Kansas City Chiefs,Arrowhead Stadium,"76,800","Kansas City, MO","459,787",AFC West,63
-Oakland Raiders,O.co Coliseum,"63,000","Oakland, CA","390,724",AFC West,63
-San Diego Chargers,Qualcomm Stadium,"70,000","San Diego, CA","1,307,402",AFC West,63
-Baltimore Ravens,M&T Bank Stadium,"71,000","Baltimore, MD","620,961",AFC North,75
-Cincinnati Bengals,Paul Brown dStadium,"65,500","Cincinnati, OH","296,943",AFC North,75
-Cleveland Browns,Cleveland Browns Stadium,"73,200","Cleveldand, OH","396,815",AFC North,75
-Pittsburgh Steelers,Heinze Field,"65,000","Pittsburgh, PA","305,704",AFC North,75
-Houston Texans,Reliant Stadium,"71,000","Houston, TX","2,099,451",AFC South,88
-Indianapolis Colts,Lucas Oil Stadium,"63,000","Indianapolis, IN","820,445",AFC South,88
-Jacksonville Jaguars,EverBank Field,"67,200","Jacksonville, FL","821,784",AFC South,88
-Tennessee Titans,LP Field,"69,100","Nashville, TN","601,222",AFC South,88
-Atlanta Hawks
-Boston Celtics
-Charlotte Bobcats
-Chicago Bulls
-Cleveland Cavaliers
-Dallas Mavericks
-Denver Nuggets
-Detroit Pistons
-Golden State Warriors
-Houston Rockets
-Indiana Pacers
-LA Clippers
-LA Lakers
-Memphis Grizzlies
-Miami Heat
-Milwaukee Bucks
-Minnesota Timberwolves
-New Jersey Nets
-New Orleans Hornets
-New York Knicks
-Oklahoma City Thunder
-Orlando Magic
-Philadelphia Sixers
-Phoenix Suns
-Portland Trail Blazers
-Sacramento Kings
-San Antonio Spurs
-Toronto Raptors
-Utah Jazz
-Washington Wizards
-Arizona Diamondbacks
-Atlanta Braves
-Baltimore Orioles
-Boston Red Sox
-Chicago White Sox
-Chicago Cubs
-Cinncinnati Reds
-Cleveland Indians
-Colorado Rockies
-Detroit Tigers
-Florida Marlins
-Houston Astros
-Kansas City Royals
-Los Angeles Angels
-Los Angeles Dodgers
-Milwaukee Brewers
-Minnesota Twins
-New York Mets
-New York Yankees
-Oakland Athletics
-Philadelphia Phillies
-Pittsburgh Pirates
-San Diego Padres
-San Francisco Giants
-Seattle Mariners
-St. Louis Cardinals
-Tampa Bay Rays
-Texas Rangers
-Toronto Blue Jays
-Washington Nationals
-Atlanta Thrashers
-Boston Bruins
-Buffalo Sabres
-Calgary Flames
-Carolina Hurricanes
-Chicago Blackhawks
-Colorado Avalanche
-Columbus Blue Jackets
-Dallas Stars
-Detroit Red Wings
-Edmonton OIlers
-Florida Panthers
-Los Angeles Kings
-Minnesota Wild
-Montreal Canadiens
-Nashville Predators
-New Jersey Devils
-New Rork Islanders
-New York Rangers
-Ottawa Senators
-Philadelphia Flyers
-Phoenix Coyotes
-Pittsburgh Penguins
-Saint Louis Blues
-San Jose Sharks
-Tampa Bay Lightning
-Toronto Maple Leafs
-Vancouver Canucks
-Washington Capitals
+Name,League
+San Francisco 49ers,NFL
+Chicago Bears,NFL
+Cincinnati Bengals,NFL
+Buffalo Bills,NFL
+Denver Broncos,NFL
+Cleveland Browns,NFL
+Tampa Bay Buccaneers,NFL
+Arizona Cardinals,NFL
+San Diego Chargers,NFL
+Kansas City,NFL
+Indianapolis Colts,NFL
+Dallas Cowboys,NFL
+Miami Dolphins,NFL
+Philadelphia Eagles,NFL
+Atlanta Falcons,NFL
+New York Giants,NFL
+Jacksonville Jaguars,NFL
+New York Jets,NFL
+Detroit Lions,NFL
+Green Bay Packers,NFL
+Carolina Panthers,NFL
+New England Patriots,NFL
+Oakland Raiders,NFL
+St.Louis Rams,NFL
+Baltimore Ravens,NFL
+Washington Redskins,NFL
+New Orlean Saints,NFL
+Seattle Seahawks,NFL
+Pittsburgh Steelers,NFL
+Houston Texans,NFL
+Tennesse Titans,NFL
+Minnesota Vikings,NFL
+Atlanta Hawks,NBA
+Boston Celtics,NBA
+Charlotte Bobcats,NBA
+Chicago Bulls,NBA
+Cleveland Cavaliers,NBA
+Dallas Mavericks,NBA
+Denver Nuggets,NBA
+Detroit Pistons,NBA
+Golden State Warriors,NBA
+Houston Rockets,NBA
+Indiana Pacers,NBA
+LA Clippers,NBA
+LA Lakers,NBA
+Memphis Grizzlies,NBA
+Miami Heat,NBA
+Milwaukee Bucks,NBA
+Minnesota Timberwolves,NBA
+New Jersey Nets,NBA
+New Orleans Hornets,NBA
+New York Knicks,NBA
+Oklahoma City Thunder,NBA
+Orlando Magic,NBA
+Philadelphia Sixers,NBA
+Phoenix Suns,NBA
+Portland Trail Blazers,NBA
+Sacramento Kings,NBA
+San Antonio Spurs,NBA
+Toronto Raptors,NBA
+Utah Jazz,NBA
+Washington Wizards,NBA
+Arizona Diamondbacks,MLB
+Atlanta Braves,MLB
+Baltimore Orioles,MLB
+Boston Red Sox,MLB
+Chicago White Sox,MLB
+Chicago Cubs,MLB
+Cinncinnati Reds,MLB
+Cleveland Indians,MLB
+Colorado Rockies,MLB
+Detroit Tigers,MLB
+Florida Marlins,MLB
+Houston Astros,MLB
+Kansas City Royals,MLB
+Los Angeles Angels,MLB
+Los Angeles Dodgers,MLB
+Milwaukee Brewers,MLB
+Minnesota Twins,MLB
+New York Mets,MLB
+New York Yankees,MLB
+Oakland Athletics,MLB
+Philadelphia Phillies,MLB
+Pittsburgh Pirates,MLB
+San Diego Padres,MLB
+San Francisco Giants,MLB
+Seattle Mariners,MLB
+St. Louis Cardinals,MLB
+Tampa Bay Rays,MLB
+Texas Rangers,MLB
+Toronto Blue Jays,MLB
+Washington Nationals,MLB
+Atlanta Thrashers,NHL
+Boston Bruins,NHL
+Buffalo Sabres,NHL
+Calgary Flames,NHL
+Carolina Hurricanes,NHL
+Chicago Blackhawks,NHL
+Colorado Avalanche,NHL
+Columbus Blue Jackets,NHL
+Dallas Stars,NHL
+Detroit Red Wings,NHL
+Edmonton OIlers,NHL
+Florida Panthers,NHL
+Los Angeles Kings,NHL
+Minnesota Wild,NHL
+Montreal Canadiens,NHL
+Nashville Predators,NHL
+New Jersey Devils,NHL
+New Rork Islanders,NHL
+New York Rangers,NHL
+Ottawa Senators,NHL
+Philadelphia Flyers,NHL
+Phoenix Coyotes,NHL
+Pittsburgh Penguins,NHL
+Saint Louis Blues,NHL
+San Jose Sharks,NHL
+Tampa Bay Lightning,NHL
+Toronto Maple Leafs,NHL
+Vancouver Canucks,NHL
+Washington Capitals,NHL

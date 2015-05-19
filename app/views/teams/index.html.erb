@@ -1,7 +1,8 @@
 <div class="row">
   Please Select Your Favorite Teams
-  
-  <% @teams.each do |x| %>
-    <option value="<%= x["#"].to_i %>"><%= x["Team"]%></option>
-  <% end %>
+  <ul>
+    <% @teams.each do |x| %>
+      <li><%= x.name%></li>
+    <% end %>
+  </ul>
 </div>

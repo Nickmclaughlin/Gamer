@@ -8,7 +8,14 @@ Rails.application.routes.draw do
   end
 
   resources :teams do
-  end 
+  end
+  resources :likes do
+  end
 
-  resources :users, only: [:show, :index, :edit, :update]
+  resources :users, only: [:show, :index, :edit, :update] do
+    resources :teams do
+      resources :likes do
+      end
+    end
+  end
 end

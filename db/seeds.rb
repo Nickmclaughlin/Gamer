@@ -5,3 +5,16 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'csv'
+
+data = Rails.root + "db/data/nfl.csv"
+
+CSV.foreach(data, headers: true) do |row|
+
+    new_hash = {}
+    row.to_hash.each_pair do |k,v|
+      new_hash.merge!( { k.downcase => v } )
+    end
+
+    Team.find_or_create_by(new_hash)
+end
