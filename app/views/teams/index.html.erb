@@ -1,8 +1,8 @@
 <div class="row">
   Please Select Your Favorite Teams
   <ul>
-    <% @teams.each do |x| %>
-      <li><%= x.name%></li>
+    <% @teams.each do |team| %>
+      <li><%= team.name %> <%= link_to "Favorite", user_team_likes_path(current_user, team.id), method: :post, class: "button tiny" %></li>
     <% end %>
   </ul>
 </div>
