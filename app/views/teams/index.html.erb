@@ -2,7 +2,13 @@
   Please Select Your Favorite Teams
   <ul>
     <% @teams.each do |team| %>
-      <li><%= team.name %> <%= link_to "Favorite", user_team_likes_path(current_user, team.id), method: :post, class: "button tiny" %></li>
+      <% if team.likes.empty?%>
+        <li><%= team.name %> <%= link_to "Favorite", user_team_likes_path(current_user, team.id), method: :post, class: "button tiny" %></li>
+      <% else %>
+        <% team.likes.each do |like| %>
+          <li><%= team.name %> <%= link_to "Unfavorite", user_team_like_path(like.user_id, like.team_id, like.id), method: :delete, class: "button tiny alert" %></li>
+        <% end %>
+      <% end %>
     <% end %>
   </ul>
 </div>
