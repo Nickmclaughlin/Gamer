@@ -27,3 +27,17 @@
     <% end %>
   <% end %>
 <% end %> -->
+
+<!-- <% team.likes.each do |like| %>
+  <% if like.user_id == current_user.id %>
+    <% if like.user_id == current_user.id %>
+      <li><%= team.name %> <%= link_to "Unfavorite", user_team_like_path(like.user_id, like.team_id, like.id), method: :delete, class: "button tiny alert" %></li>
+    <% else %>
+      <li><%= team.name %> <%= link_to "Favorite", user_team_likes_path(current_user, team.id), method: :post, class: "button tiny" %></li>
+    <% end %>
+  <% else %>
+    <% if like.user_id != current_user.id %>
+      <li><%= team.name %> <%= link_to "Favorite", user_team_likes_path(current_user, team.id), method: :post, class: "button tiny" %></li>
+    <% end%>
+  <% end %>
+<% end %> -->
